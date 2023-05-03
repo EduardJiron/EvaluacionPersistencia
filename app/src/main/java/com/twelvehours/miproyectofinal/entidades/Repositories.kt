@@ -5,6 +5,6 @@ data class Repositories(
     val name:String,
     val description:String,
     val language:String,
-    val commits:Int,
+    val numbercommits:Int,
 
 )
