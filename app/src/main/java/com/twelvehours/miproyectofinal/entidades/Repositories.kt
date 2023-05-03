@@ -1,10 +1,18 @@
 package com.twelvehours.miproyectofinal.entidades
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+
+@Entity
 data class Repositories(
-    val id:Int,
-    val name:String,
-    val description:String,
-    val language:String,
-    val numbercommits:Int,
+
+
+@PrimaryKey(autoGenerate = true) val id :Int=0,
+@ColumnInfo(name="name") val name:String?,
+@ColumnInfo(name="description") val description:String?,
+@ColumnInfo(name="language") val language:String?,
+@ColumnInfo(name="numbercommits") val numbercommits:Int?
 
 )

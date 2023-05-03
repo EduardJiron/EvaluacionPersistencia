@@ -12,7 +12,7 @@ interface DaoQueryUr {
 
     //Crud para la tabla User
     @Query("Select *from User")
-    fun getAll ():List<User>
+    fun getAllUser ():List<User>
 
     @Insert
     fun insertUser (user:User)
