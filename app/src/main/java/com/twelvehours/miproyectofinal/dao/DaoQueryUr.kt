@@ -36,7 +36,7 @@ interface DaoQueryUr {
     @Query("Update Repositories set name=:name, description=:description, language=:language, numbercommits=:commits where id=:id")
     fun updateRepositories (id:Int, name:String, description:String, language:String, commits:Int)
 
-    
+
 
 
 
